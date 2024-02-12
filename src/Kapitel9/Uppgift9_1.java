@@ -9,21 +9,21 @@ public class Uppgift9_1 {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Dagens mätarställning?: ");
-        int mätarStällning = in.nextInt(); // Läser in dagens mätarställning
+        System.out.print("Dagens matarstallning?: ");
+        int matarStallning = in.nextInt(); // Laser in dagens matarstallning
 
-        System.out.print("Mätarställning ett år sedan?: ");
-        int mätarEttÅr = in.nextInt(); // Läser in mätarställningen ett år sen
+        System.out.print("Matarstallning ett ar sedan?: ");
+        int meterOneYear = in.nextInt(); // Laser in matarstallningen ett ar sen
 
-        System.out.print("Antal liter förbrukad bensin?: ");
-        int förbrukadBensin = in.nextInt(); // Läser in antalet förbrukad bensin
+        System.out.print("Antal liter forbrukad bensin?: ");
+        int forbrukadBensin = in.nextInt(); // Laser in antalet forbrukad bensin
 
-        double kördaMil = mätarStällning - mätarEttÅr;
-        System.out.println("Antal körda mil?: " + (kördaMil)); // Beräknar antalet körda mil
+        double kordaMil = matarStallning - meterOneYear;
+        System.out.println("Antal korda mil?: " + (kordaMil)); // Beraknar antalet korda mil
 
-        System.out.println("Antal liter bensin: " + förbrukadBensin);
+        System.out.println("Antal liter bensin: " + forbrukadBensin);
 
-        System.out.println("Förbrukning per mil: " + (förbrukadBensin/kördaMil));
+        System.out.println("Forbrukning per mil: " + (forbrukadBensin/kordaMil));
 
     }
 }

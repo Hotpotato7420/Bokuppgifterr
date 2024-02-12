@@ -10,25 +10,25 @@ public class Uppgift9_2 {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Dagens mätarställning?: ");
-        int mätarStällning = in.nextInt(); // Läser in dagens mätarställning
+        System.out.print("Dagens matarstallning?: ");
+        int matarStallning = in.nextInt(); // Laser in dagens matarstallning
 
-        System.out.print("Mätarställning ett år sedan?: ");
-        int mätarEttÅr = in.nextInt(); // Läser in mätarställningen ett år sen
+        System.out.print("Matarstallning ett ar sedan?: ");
+        int matarEttar = in.nextInt(); // Laser in matarstallningen ett ar sen
 
-        System.out.print("Antal liter förbrukad bensin?: ");
-        double förbrukadBensin = in.nextDouble(); // Läser in antalet förbrukad bensin
+        System.out.print("Antal liter forbrukad bensin?: ");
+        double forbrukadBensin = in.nextDouble(); // Laser in antalet forbrukad bensin
 
-        double kördaMil = mätarStällning - mätarEttÅr;
-        System.out.format(new Locale("sv", "SE"),"Antal körda mil: %.2f \n",  (kördaMil)); // Beräknar antalet körda mil
+        double kordaMil = matarStallning - matarEttar;
+        System.out.format(new Locale("sv", "SE"),"Antal korda mil: %.2f \n",  (kordaMil)); // Beraknar antalet korda mil
 
         System.out.format(new Locale("sv", "SE"),
-                "Antal liter bensin: %.2f \n", förbrukadBensin);
+                "Antal liter bensin: %.2f \n", forbrukadBensin);
 
-        // Gör förbukningen till en variabel och sedan använder den
-        double förbrukning = förbrukadBensin/kördaMil;
+        // Gor forbukningen till en variabel och sedan anvander den
+        double forbrukning = forbrukadBensin/kordaMil;
         System.out.format(new Locale("sv", "SE"),
-                "Förbrukning per mil: %.2f \n",förbrukning);
+                "Forbrukning per mil: %.2f \n",forbrukning);
 
     }
 }

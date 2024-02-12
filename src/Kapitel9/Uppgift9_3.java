@@ -6,7 +6,7 @@ public class Uppgift9_3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Hur mycket betalar du för? ");
+        System.out.print("Hur mycket betalar du for? ");
         int amount = in.nextInt();
 
         System.out.print("Hur mycket betalar du med? ");
@@ -14,7 +14,7 @@ public class Uppgift9_3 {
 
         int payment = betalar-amount;
         if (payment < 1){
-            System.out.println("Du betalade mindre än vad du ska");
+            System.out.println("Du betalade mindre an vad du ska");
         }
         else {
             int hundra = payment;
