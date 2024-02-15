@@ -13,7 +13,7 @@ public class Uppgift9_8 {
             System.out.println("Cant calculate");
             return;
         }
-        String repeatYear1 = "*".repeat(year1 / 100);
+        String repeatYear1 = "*".repeat(year1 / 100); // Number of *'s
 
 
         System.out.println("How much did it rain the second year? (0-3000 mm)");
