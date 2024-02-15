@@ -8,7 +8,7 @@ public class Uppgift9_9 {
         System.out.print("When does the program start? (hh.mm): ");
         String startTime = in.nextLine(); // Input data for starTime
 
-        int startHour = 0, startMinute = 0, endHour = 0, endMinute = 0; // Initialize variables
+        int startHour, startMinute, endHour, endMinute; // Initialize variables
 
         if (startTime.length() == 5){ // End operation if not in hh.mm format
              startHour = Integer.parseInt(startTime.substring(0, 2));
