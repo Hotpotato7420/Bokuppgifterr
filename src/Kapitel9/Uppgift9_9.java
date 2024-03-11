@@ -6,7 +6,7 @@ public class Uppgift9_9 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("When does the program start? (hh.mm): ");
-        String startTime = in.nextLine(); // Input data for starTime
+        String startTime = in.nextLine(); // Input data for startTime
 
         int startHour, startMinute, endHour, endMinute; // Initialize variables
 

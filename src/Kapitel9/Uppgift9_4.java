@@ -1,7 +1,6 @@
 package Kapitel9;
 
-import javax.swing.*;
-import java.util.Locale;
+
 import java.util.Scanner;
 
 
