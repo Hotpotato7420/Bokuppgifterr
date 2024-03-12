@@ -1,33 +1,40 @@
 package Kapitel11;
 
-import java.sql.Array;
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Uppgift11_1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        ArrayList<Integer> talList = new ArrayList<>();
 
-        int[] a = new int[1];
-        int arrayLength = a.length;
-        int[] temp = new int[arrayLength++];
-
-        System.out.print("Skriv in dina nummer: ");
-        for (int i = 0; i<arrayLength; i++){
-            a[i] = in.nextInt();
-            arrayLength++;
-
+        System.out.println("Enter your numbers: 0 to exit.");
+        int num;
+        while (true) { // Dynamic array that grows as long as you dont exit it
+            num = in.nextInt();
+            if (num == 0) // Exit if you enter a 0
+                break;
+            talList.add(num); // Add the number to the list
+        }
+        int[] tal = new int[talList.size()]; // Make an array out of the ArrayList
+        for (int i = 0; i < talList.size(); i++) {
+            tal[i] = talList.get(i); // Transfer over the arrayList to the array
         }
 
-        HashMap<Integer, Boolean> seen = new HashMap<Integer, Boolean>();
-        for (int i = 0; i < arrayLength; i++){
-            if (seen.containsKey(a[i])) {
-                continue;
-            }
 
-            seen.put(a[i], true);
-            System.out.println(a[i]);
+        boolean[] isDuplicate = new boolean[tal.length]; // Make a boolean array to check for duplicates
+
+        for (int i = 0; i < tal.length; i++) {
+            if (!isDuplicate[i]) { // Checks for duplicates
+                for (int b = i + 1; b < tal.length; b++) {
+                    if (tal[i] == tal[b]) {
+                        isDuplicate[b] = true; // Puts isDuplicate = true to duplicates
+                    }
+                }
+                System.out.println(tal[i]); // Prints non dupes
+            }
         }
     }
 }
+
+
